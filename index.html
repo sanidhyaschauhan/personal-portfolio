@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e1557161ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Screenshot 2024-01-22 at 9.07.49 PM.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="Landing.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Work Experience</a></li>
+                <li><a href="#portfolio">Personal Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I'm <span>Sanidhya</span> Chauhan <br>currently a MS CS student <br> at Arizona State University.</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Portfolio-2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a software enthusiast with leadership skills, currently pursuing a Master's degree in Computer Science at Arizona State University, passionate about developing innovative and efficient software solutions. I have a Bachelor of Engineering in Electronics and Communication Engineering from Thapar Institute of Engineering and Technology. In my most recent role I spearheaded the creation of an advanced pricing engine and implemented a strategic clustering technique for the products.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack Developer</span><br>Designing Software Solutions</li>
+                            <li><span>Data Scientist</span><br>Building Machine Learning Models</li>
+                            <li><span>Data Engineer</span><br>Creating data pipelines</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>04/23-08/23</span><br>Data Scientist II at EXL</li>
+                            <li><span>11/21-03/23</span><br>Data Scientist at Uber</li>
+                            <li><span>08/20-11/23</span><br>Data Engineer at Amazon</li>
+                            <li><span>07/20-11/23</span><br>Associate Analyst at United Airlines</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>08/23-05/25</span><br>Master's in Computer Science at Arizona State University</li>
+                            <li><span>07/15-07/19</span><br>Bachelor's in Electronics and Communication Engineering at Thapar University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----services-->
+
+<div id="services"> 
+    <div class="container">
+        <h1 class="sub-title">Work Experience</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-dollar-sign"></i>
+                <h2>Data Scientist II - Exl</h2>
+                <p>As a Data Scientist II, I led the development of an advanced pricing engine using an XGBoost model, achieving a significant reduction in SMAPE to 33.5. This engine optimized pricing for both existing and new products. I also implemented a strategic clustering approach for product categorization, creating distinct models for each cluster. This innovation further improved pricing accuracy, lowering SMAPE to 26.8. Additionally, I eliminated the need for manual interventions in the pricing process by incorporating factors like seasonality, market trends, time lags, and product attributes, saving up to two days of effort.</p>
+                <a href="#"> Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-users"></i>
+                <h2>Data Scientist I - Uber</h2>
+                <p>At Uber Eats, my role involved leveraging data science to enhance customer experience and business strategy. I segmented customers using clustering algorithms, which led to tailored offers and a 28% increase in engagement and ROI. Additionally, I developed a menu matching strategy using the TF-IDF ML algorithm to analyze pricing discrepancies between Uber Eats and competitors, identifying 45% of menus with over 20% price differences. Furthermore, I conducted Twitter sentiment analysis using NLP algorithms, which resulted in strategic insights that improved the NPS score by an average of 0.7 points across various geographies.</p>
+                <a href="#"> Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Engineer - Amazon</h2>
+                <p> In my role, I focused on enhancing e-commerce operations and decision-making processes. I compiled and published weekly and monthly business reviews, emphasizing key metrics for e-commerce efficiency. I developed a web scraping tool to gather real-time data from Global Selling merchants, significantly reducing data retrieval time from 2-3 days to immediate availability. This tool was integrated into a dashboard, facilitating quicker, more informed decisions. Additionally, I orchestrated multiple data pipelines, employing ETL Transform and Load jobs, which streamlined data consumption and supported cross-functional teams in responding rapidly to business needs.</p>
+                <a href="#"> Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-plane"></i>
+                <h2>Associate analyst - United Airlines</h2>
+                <p>I developed a collaborative-based flight recommendation engine for United.com, significantly enhancing user experience and contributing to an incremental monthly revenue increase of $2 million. Furthermore, I analyzed customer purchase data across different segments, formulating strategies to improve real-time decision-making. This approach effectively balanced price sensitivity with personalized recommendations, resulting in a 12% increase in the rate of customers accepting these recommendations.</p>
+                <a href="#"> Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layer">
+                    <h3>Food Delivery System</h3>
+                    <p>Developed an advanced food delivery system using distributed software, multithreading, and
+                        event-driven programming. Integrated multiple third-party APIs with secure hashed authentication, managing session states and
+                        cookies. Built using .NET and C#, the project featured a cohesive backend and user-friendly frontend, with data storage in XML.</p>
+                    <a href="https://github.com/sanidhyaschauhan/Food-Delivery-Application"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="layer">
+                    <h3>Automated Pacman Using Smart Agents</h3>
+                    <p>Developed a smart agent for playing Pac-Man, leveraging advanced search algorithms such as DFS, BFS, UFS, and A* Search, with an emphasis on an innovative A* heuristic. This project demonstrated the application of AI principles in optimizing gameplay through strategic maze navigation and dynamic problem-solving.</p>
+                    <a href="https://github.com/sanidhyaschauhan/Pacman-Search"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png">
+                <div class="layer">
+                    <h3>Event Driven Parking Management System</h3>
+                    <p>Designed and implemented a multithreaded, distributed, event-driven parking management system, addressing a complex system design challenge. Utilized advanced object-oriented programming techniques to ensure encapsulation and abstraction, allowing for the presentation of only pertinent information to end-users.</p>
+                    <a href="https://github.com/sanidhyaschauhan/ParkingSystem"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!------------contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>sanidhyaschauhan@gmail.com</p>
+                <p><i class="fa-solid fa-mobile"></i>+1-(602)-576-8281</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Resume_Sanidhya_Chauhan.pdf" download class="btn btn2">Download My Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name *" required>
+                    <input type="text" name="Email" placeholder="Your Email *" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    function openmenu(){
+        document.getElementById("sidemenu").style.right = "0";
+    }
+    function closemenu(){
+        document.getElementById("sidemenu").style.right = "-200px";
+    }
+</script>
+
+<form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+  </form>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzzwTfsiv-0zR1yXi-21ZmXGaiAivFZcQpZQCPteEFP8upr6kOBHGyExr6kKUbpZpAp/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Thanks for reaching out! I'll get back to you soon."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
