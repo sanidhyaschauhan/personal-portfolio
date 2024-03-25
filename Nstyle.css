@@ -41,6 +41,10 @@ h2 {
     transition: transform 0.3s ease-in-out;
     border: 3px solid transparent; /* Maintain layout with an invisible border */
     padding: 5px; /* Adjust padding as needed */
+    a {
+        text-decoration: none;
+    
+    }
 }
 
 .profile img {
